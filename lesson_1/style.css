@@ -1,0 +1,21 @@
+* { /* Reset de estilos, para sobreescribir los estilos por defecto de los navegadores. */
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; /* Permite sobreescribir el tamaño de la pestaña. */
+}
+
+
+h1 { /* Estilado de la etiqueta h1, es un tipo de selector. */
+    color: blue; /* Declaración de colores, mediante el sistema hexadecimal. */
+    border: 2px solid oklch(250 50 240); /* Declaración de colores, mediante el sistema OKLCH. Este es un sistema moderno y muy potente. */
+}
+
+.use-class {
+    color: rgb(250, 0, 250); /* Declaración de colores, mediante el sistema RGB. */
+    border: 2px solid rgb(250 0 250 / 0.35); /* Declaración de colores, mediante el sistema RGB, pero añadiendo la capa de transparencia. Este forma de usar rgb es moderna. */
+}
+
+#use-id {
+    color: hsl(120, 100%, 50%); /* Declaración de colores, mediante el sistema HSL. */
+    border: 2px solid rgba(343, 0, 340, .35); /* Declaración de colores, mediante el sistema RGBA. Esta forma es muy legacy => Antigua */
+}
