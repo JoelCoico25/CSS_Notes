@@ -1,0 +1,60 @@
+body {
+    background-color: aqua;
+}
+
+.container {
+    background-color: lightblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px; /* La familia de propiedades de fuente de texto, es heredada automáticamente para los hijos. */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.text {
+    background-color: lightgreen;
+    border-radius: inherit; /* Existen propiedades que no se pueden heredar, tal y como la de border. Pero, con el valor de inherit se puede forzar la herencia y de esa forma evitar repetir código. */
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button:hover { /* Estado en el que se coloca el puntero sobre el botón. */
+    background-color: darkred;
+    outline: 10px solid red;
+}
+
+button:active { /* Estado en el que se hace click sobre el botón. */
+    background-color: darkgreen;
+    outline: 10px solid green;
+}
+button:focus { /* Estado en el que se hace click sobre el botón y se mantiene presionado. */
+    background-color: darkblue;
+    outline: 10px solid blue;
+}
+button:disabled { /* Estado en el que se hace click sobre el botón y se mantiene presionado. */
+    background-color: darkgray;
+    outline: 10px solid gray;
+}
+
+.container:hover .text { /* Se puede aplicar un hover a un elemento padre y que afecte a los hijos. */
+    background-color: darkgreen;
+    color: white;
+}
+li:first-child { /* Se puede aplicar estilos al primer hijo. */
+    background-color: darkgreen;
+    color: white;
+    list-style: none;
+}
+li:last-child { /* Se puede aplicar estilos al último hijo. */
+    background-color: darkkhaki;
+    color: white;
+    list-style: none;
+}
+li:nth-child(2) { /* Se puede aplicar estilos al segundo hijo. */
+    background-color: darkorchid;
+    color: white;
+    list-style: none;
+}
+
+/* Las pseudo-clases permiten controlar ciertos estados del elemento. */
+/* La herencia puede ser forzada o adherida de forma natural en ciertas propiedades, tales como el font-family, color, entre otras. */

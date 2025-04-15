@@ -1,0 +1,58 @@
+/* Selectores combinados */
+
+p{
+    color: blue;
+}
+
+.text strong{ /* Mediante el uso de un operador combinado, se puede seleccionar un elemento específico dentro de otro */
+    color: red;
+}
+
+h1{
+    color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+
+/* El ejemplo más común con las listas */
+
+ul {
+    list-style: none;
+    font-size: 34px;
+}
+
+ul li { 
+    opacity: 0.5; /* Existen propiedades que pueden alterar el comportamiento de los operadores combinados, como la opacidad */
+}
+
+article {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+article p {
+    font-size: 20px;
+    color: purple;
+}
+
+/* Para tomar el hijo directo del elemento padre, se utiliza el operador > */
+article > p {
+    font-size: 30px;
+    color: rgba(224, 152, 18, 0.959);
+}
+
+/* Para tomar el primer hijo directo del elemento padre, se utiliza el operador + */
+p + code {
+    font-size: 30px;
+    color: red;
+}
+
+/* Para tomar el último hijo directo del elemento padre, se utiliza el operador ~ */
+p ~ span {
+    font-size: 30px;
+    color: blue;
+}
+
+
