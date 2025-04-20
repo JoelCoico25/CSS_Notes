@@ -1,0 +1,39 @@
+p {
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* La cascada en CSS suele ejecutar de manera ordenada y dar prioridad a las propiedades definidas en el último bloque. */
+
+p {
+    color: peru;
+    /* A esta característica de CSS se le conoce la especificada, que utiliza un algoritmo del propio lenguaje para calcularla. */
+}
+
+/* Existen metodologías de CSS que permiten organizar el código de una manera más eficiente y controlar la especifidad de los estilos. Entre las más conocidas se encuentra BEM(Block Element Modifier) y frameworks de estilos como Tailwind o Bootstrap. */
+
+/* Formas de controlar la especifidad */
+
+.text {
+    color: purple !important; /* La propiedad !important permite que el color purple se aplique sin importar la especifidad. */
+    /* Sin embargo, no es recomendable utilizar !important, ya que puede dificultar la lectura y mantenimiento del código. */
+    /* Las clases suelen ser más especificas en CSS, superando a los nombres de elementos. */
+}
+
+#text {
+    color: red;
+    color: oklch(0.39 0.0419 20); /* En caso no soporte el navegador el sistema de color oklch, aplicará el fallback con el color red. */
+    /* Los ID son más específicos que las clases, por lo que se aplican primero. */
+}
+
+/* Para calcular la especifidad de los elementos que quieres modificar, puedes utilizar calculadoras de especifidad. */
+/* Ejemplo de calculadora de especifidad: https://specificity.keegan.st/ */
+
+/* Para controlar la especifidad también se pueden utilizar los fallbacks que permiten definir propiedades alternativas, en caso de que no sean soportadas por todos los navegadores. Ya que la cascada en CSS ejecuta las últimas propiedades definidas. */
+
+/* Se puede saltar la especifidad con el uso de !important, pero no es recomendable. */
+
+/* Por último se puede utilizar la inserción de estilos en línea del HTML, pero no es recomendable. Los style in line poseen mayor especifidad que cualquiera de las anteriores. */

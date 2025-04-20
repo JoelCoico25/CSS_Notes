@@ -1,0 +1,28 @@
+.container{
+    width: 50vw;  /* Se considera una unidad relativa, y se utiliza para acceder al viewport como padre. */
+    /* width: 250px;  Se considera una unidad absoluta, pero no es así. */
+    height: 50vh;  /* Se considera una unidad relativa, y se utiliza para acceder al viewport como padre. */
+    background-color: green;
+}
+
+/* Las unidades relativas son aquellas que dependen de un elemento padre, mientras que las unidades absolutas son aquellas que no dependen de un elemento padre. */
+
+/* Las unidades relativas son: em, rem, vw, vh, % */
+/* Las unidades absolutas son: px, cm, mm, in, pt, pc */
+
+/* Las unidades relativas son más recomendables que las absolutas, ya que se adaptan mejor a diferentes tamaños de pantalla y dispositivos. */
+
+/* Las unidades absolutas son más recomendables para elementos que no necesitan adaptarse a diferentes tamaños de pantalla y dispositivos. */
+
+* {
+    margin: 0;  /* Se utiliza para eliminar el margen por defecto de los navegadores. */
+    padding: 0;  /* Se utiliza para eliminar el padding por defecto de los navegadores. */
+    box-sizing: border-box;  /* Se utiliza para que el padding y el border se incluyan en el tamaño total del elemento. */
+
+}
+
+/* El CSS reset es una metodología que se utiliza para eliminar los estilos por defecto de los navegadores, actualmente no es recomendable utilizarla ya que algunos estilos que tienen los browsers por default necesitan ser renderizadas al iniciar la aplicacion web.. */
+
+/* En su defecto apareció una nueva metodología que se llama normaliza y se centra en eliminar los estilos por defecto solo cuando es necesario y los elementos que los mantienen se renderizan al inicio. */
+
+/* Normalize, ya viene incorporado por algunos frameworks como Bootstrap, Tailwind, etc. Pero, también puede ser instalada como una dependencia. */

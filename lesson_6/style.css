@@ -1,0 +1,22 @@
+header {
+    background-color: chocolate;
+    color: white;
+    width: 100%; /* Con esta propiedad se puede definir el ancho de la caja. */
+    height: 60px; /* Con esta propiedad se puede definir la altura de la caja. */
+    border: 2px solid black; /* Con esta propiedad se puede definir el borde de la caja. */
+    border-radius: 10px; /* Con esta propiedad se puede definir el radio de la caja. */
+    box-shadow: 0px 0px 10px black; /* Con esta propiedad se puede definir la sombra de la caja. */
+    margin: auto; /* Con esta propiedad se puede definir el margen de la caja. */
+    padding-top: 5px; /* Con esta propiedad se puede definir el relleno de la caja. */
+}
+header h1 {
+    text-align: center;
+    margin: auto; 
+    padding: 8px;
+}
+
+/* El padding y border suelen sumar al ancho y alto de la caja, por lo que se recomienda usar box-sizing: border-box; para evitar problemas de diseño. */
+
+* {
+    box-sizing: border-box; /* Con esta propiedad se puede definir el modelo de caja. */
+}
