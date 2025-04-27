@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejemplo z-index + position</title>
+<style>
+    body {
+    background: #f0f0f0;
+    margin: 50px;
+    position: relative;
+    }
+
+    .caja {
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      position: relative; /* Cambia esto a "static" para ver la diferencia */
+    }
+
+    .rojo {
+    background-color: crimson;
+    z-index: 10;
+    top: 30px;
+    left: 30px;
+    }
+
+    .azul {
+    background-color: royalblue;
+    z-index: 5;
+    top: -50px;
+    left: 80px;
+    }
+</style>
+</head>
+<body>
+
+<div class="caja rojo">Rojo (z-index 10)</div>
+<div class="caja azul">Azul (z-index 5)</div>
+
+</body>
+</html>

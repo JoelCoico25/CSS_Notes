@@ -1,0 +1,115 @@
+.container-text {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    border: 3px solid black;
+    font-size: 20px;
+    overflow: hidden; /* Permite ocultar el desbordamiento. */
+}
+
+.container-text1 {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    border: 3px solid black;
+    font-size: 20px;
+    overflow: scroll; /* Permite hacer scroll. */
+}
+
+.container-text2 {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    border: 3px solid black;
+    font-size: 20px;
+    overflow: auto; /* Se adecua a la configuración del viewport y decide en función a ello que mostrar. */
+}
+
+.container-text3 {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    font-size: 14px;
+    border: 3px solid black;
+    font-size: 25px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas. */
+    overflow: hidden; /* Permite ocultar el desbordamiento. */  
+    text-overflow: ellipsis; /* Agrega puntos suspensivos al final del texto. */
+    /* Se utilizan las 3 propiedades para que funcionen los puntos suspensivos. */ 
+}
+
+/* Position Relative and Absolute */
+
+.container01 {
+    position: relative; /* Se posiciona en relación a su posición original. Y sirve como padre de todos sus elementos hijo. */
+    width: 200px;
+    height: 200px;
+    background-color: rgb(24, 25, 152);
+    border: 3px solid black;
+}
+
+.wrapper1 {
+    position: absolute; /* Se posiciona en relación a su padre. */
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+    top: 50px; /* Se posiciona 50px desde la parte superior del padre. */
+    left: 50px; /* Se posiciona 50px desde la parte izquierda del padre. */
+}
+
+/* Una forma de centrar un div, poco recomendada */
+.wrapper2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 255, 0);
+    top: 0; /* Se posiciona 0px desde la parte superior del padre. */
+    left: 0; /* Se posiciona 0px desde la parte izquierda del padre. */
+    right: 0; /* Se posiciona 0px desde la parte derecha del padre. */
+    bottom: 0; /* Se posiciona 0px desde la parte inferior del padre. */
+    margin: auto; /* Se centra el elemento hijo dentro del padre. */
+    /* Se centra el elemento hijo dentro del padre. */
+}
+
+/* Forma recomendada para centrar un div */
+.wrapper3 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 255);
+    inset: 0; /* Se posiciona 0px desde la parte superior, izquierda, derecha e inferior del padre. */
+    margin: auto; /* Se centra el elemento hijo dentro del padre. */
+}
+/* Position Fixed */
+
+.footer {
+    position: fixed; /* Se posiciona en relación a la ventana del navegador. */
+    bottom: 0; /* Se posiciona 0px desde la parte inferior de la ventana del navegador. */
+    left: 0; /* Se posiciona 0px desde la parte izquierda de la ventana del navegador. */
+    width: 100%; /* Se ocupa el 100% del ancho de la ventana del navegador. */
+    height: 50px; /* Se ocupa el 50px de alto. */
+    background-color: rgb(255, 255, 0);
+    text-align: center; /* Se centra el texto. */
+}
+
+/* Position Sticky */
+
+.container02 {
+    position: relative; /* Se posiciona en relación a su posición original. Y sirve como padre de todos sus elementos hijo. */
+    width: 200px;
+    height: 200px;
+    background-color: rgb(24, 25, 252);
+    border: 3px solid black;
+}
+
+.wrapper4 {
+    position: sticky; /* Se posiciona en relación al elemento padre y empuja la caja hasta que el padre se desplace. */
+    top: 0; /* Se posiciona 0px desde la parte superior del padre. */
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 255);
+}
+
+/* El position Sticky permite que el elemento quede fijo en la parte superior del viewport, hasta que ya se acabé el contenedor padre. */
+
+
